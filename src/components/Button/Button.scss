@@ -1,0 +1,19 @@
+.button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover {
+        background-color: #ffffff36;
+    }
+    &_fill {
+        background-color: #fff;
+        color: #2B589A;
+    }
+}

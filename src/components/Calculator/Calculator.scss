@@ -1,0 +1,14 @@
+.calculator {
+    box-shadow: 0px 3.71px 7.16px 0px #0000001F;
+    border-radius: 18px;
+    padding: 16px 48px 44px 46px;
+    background: linear-gradient(155.23deg, #28518E 0%, #3A77D1 100%);
+    max-width: 544px;
+    width: 100%;
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 37px;
+        justify-items: center;
+    }
+}
