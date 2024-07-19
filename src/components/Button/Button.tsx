@@ -1,9 +1,10 @@
-import React from "react";
+import { ReactElement } from "react";
 import './Button.scss'
+import { BtnStyle } from "@/utils/types";
 
-const Button = ({name, style}: {name: string, style: string}): React.ReactElement => {
+const Button = ({name, style}: {name: string, style: string}): ReactElement => {
     return(
-        <button className={"button" + (style === "fill" ?  " button_fill" : "")}>
+        <button className={"button" + (style === BtnStyle.Fill ?  " button_fill" : "")}>
             {name}
         </button>
     )

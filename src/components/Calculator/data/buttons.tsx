@@ -1,82 +1,84 @@
+import { BtnStyle } from "@/utils/types";
+
 export const buttons: {name: string, style: string}[] = [
     {
         name: "C",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "√",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "%",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "/",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "7",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "8",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "9",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "×",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "4",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "5",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "6",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "-",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "1",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "2",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "3",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "+",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "00",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "0",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: ",",
-        style: "base"
+        style: BtnStyle.Base
     },
     {
         name: "=",
-        style: "fill"
+        style: BtnStyle.Fill
     }
 ]
