@@ -11,4 +11,13 @@
         margin-top: 37px;
         justify-items: center;
     }
+    @media (max-width: 600px) {
+        box-shadow: none;
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        padding: 16px 25px 30px 25px;
+        display: flex;
+        flex-direction: column;
+    }
 }
