@@ -9,11 +9,16 @@
     font-size: 32px;
     cursor: pointer;
     transition: 0.2s ease;
-    &:hover {
+    &:not(&_fill):hover {
         background-color: #ffffff36;
     }
     &_fill {
         background-color: #fff;
         color: #2B589A;
+    }
+    @media (max-width: 600px) { 
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
     }
 }
