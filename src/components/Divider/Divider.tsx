@@ -1,5 +1,6 @@
+import { ReactElement } from 'react'
 import './Divider.scss'
-const Divider = (): React.ReactElement => {
+const Divider = (): ReactElement => {
     return (
         <hr className="divider"/>
     )

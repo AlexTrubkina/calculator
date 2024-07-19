@@ -1,11 +1,12 @@
-import Button from "../Button/Button";
-import Divider from "../Divider/Divider";
+import { ReactElement } from "react";
+import Button from "@components/Button/Button";
+import Divider from "@components/Divider/Divider";
 import { buttons } from "./data/buttons";
 import './Calculator.scss'
-import Input from "../Input/Input";
+import Input from "@components/Input/Input";
 import OperationsSignature from "../OperationsSignature/OperationsSignature";
 
-const Calculator = (): React.ReactElement => {
+const Calculator = (): ReactElement => {
     return (
         <div className="calculator">
             <OperationsSignature text=""/>
