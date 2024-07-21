@@ -1,9 +1,9 @@
-const countOperations = (inputValue: string) => {
+export const countOperations = (inputValue: string) => {
     const operations: RegExpMatchArray|null = inputValue.match(/[^0-9]/g);
     return operations
 }
 
-const defineNextNumber = (operations: RegExpMatchArray, inputValue: string, i: number): number => {
+export const defineNextNumber = (operations: RegExpMatchArray, inputValue: string, i: number): number => {
     const operationIndex = inputValue.indexOf(operations[i]);
     if (i === operations.length - 1) {
         return +inputValue.slice(operationIndex + 1, inputValue.length);
