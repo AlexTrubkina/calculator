@@ -1,7 +1,10 @@
 .signature {
-    display: block;
+    display: flex;
     height: 117px;
     font-size: 24px;
     color: #fff;
     font-weight: 500;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
 }
