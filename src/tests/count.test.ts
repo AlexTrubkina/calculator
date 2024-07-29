@@ -1,4 +1,4 @@
-import { countOperations } from '@components/Calculator/utils/countOperations';
+import { countOperations } from '@components/Calculator/utils/count';
 import { expect, test } from 'vitest'
 
 test('countOperations', () => {
