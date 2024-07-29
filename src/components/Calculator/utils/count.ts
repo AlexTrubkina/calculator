@@ -22,8 +22,6 @@ export const calculateResult = (inputValue: string) => {
     for (let i = 0; i < operations.length; i++) {
         const nextNumber: number = defineNextNumber(operations, inputValue, i);
         result = buttons.operators.find((operator) => operator.name === operations[i])!.action!(result, nextNumber);
-        console.log(result);
-        
     }
     return String(result)
 }

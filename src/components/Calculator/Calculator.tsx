@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { KeyboardEvent, ReactElement, useState } from "react";
 import Button from "@components/Button/Button";
 import Divider from "@components/Divider/Divider";
 import { buttons } from "./data/buttons";
@@ -29,8 +29,17 @@ const Calculator = (): ReactElement => {
         }
     }
 
+    const onKeyDownCalculator = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            onClickButton('=');
+        } 
+        if (e.key === 'Escape') {
+            onClickButton('C');
+        }
+    }
+
     return (
-        <div className="calculator">
+        <div className="calculator" onKeyDown={onKeyDownCalculator}>
             <OperationsSignature text={signatureText}/>
             <Input setInputValue={setInputValue} inputValue={inputValue}/>
             <Divider/>
