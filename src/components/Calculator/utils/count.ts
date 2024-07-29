@@ -1,3 +1,5 @@
+import { buttons } from "../data/buttons";
+
 export const countOperations = (inputValue: string) => {
     const operations: RegExpMatchArray|null = inputValue.match(/[^0-9]/g);
     return operations
@@ -19,35 +21,9 @@ export const calculateResult = (inputValue: string) => {
     let result: number = +inputValue.slice(0, 1) || 1;
     for (let i = 0; i < operations.length; i++) {
         const nextNumber: number = defineNextNumber(operations, inputValue, i);
-        console.log(operations[i].charCodeAt(0));
+        result = buttons.operators.find((operator) => operator.name === operations[i])!.action!(result, nextNumber);
+        console.log(result);
         
-        switch (operations[i].charCodeAt(0)) {
-            case 47:
-                result /= nextNumber;
-                break;
-            case 42:
-                result *= nextNumber;
-                break;
-            case 215:
-                result *= nextNumber;
-                break;
-            case 43:
-                result += nextNumber;
-                break;
-            case 45:
-                result -= nextNumber;
-                break;
-            case 37:
-                result = (result / 100) * nextNumber;
-                break;
-            case 8730:   
-                result *= Math.sqrt(nextNumber);
-                break;
-            default:
-                console.log('error');
-                
-                break;
-        }
     }
     return String(result)
 }
