@@ -1,0 +1,16 @@
+.Toast {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    animation: appear 0.3s ease forwards;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1
+    }
+}
