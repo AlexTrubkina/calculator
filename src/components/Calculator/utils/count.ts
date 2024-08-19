@@ -5,6 +5,12 @@ export const countOperations = (inputValue: string) => {
     return operations
 }
 
+export const checkExpression = (inputValue: string) => {
+    if (!inputValue[inputValue.length - 1].match(/[0-9, )]/)) {
+        throw new Error("Введите корректное выражение")
+    }
+}
+
 export const countNumbers = (inputValue: string) => {
     const numbers: RegExpMatchArray|null = inputValue.match(/[0-9]/g);
     return numbers
@@ -22,8 +28,6 @@ export const calculateResult = (inputValue: string) => {
     let result: number = +inputValue.slice(0, 1) || 1;
     for (let i = 0; i < operations.length; i++) {
         const nextNumber: number = defineNextNumber(numbers, i);
-        console.log(nextNumber);
-        
         result = buttons.operators.find((operator) => operator.name === operations[i])!.action!(result, nextNumber);
     }
     return String(result)
